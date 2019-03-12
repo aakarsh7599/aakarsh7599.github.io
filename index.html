@@ -258,6 +258,7 @@
 <script src="./dist/js/three.r92.min.js"></script>
 <script src="./dist/js/vanta.waves.min.js"></script>
 <script src="./dist/js/vanta.rings.min.js"></script>
+<script src="./dist/js/vanta.fog.min.js"></script>
 <script>
   //paste this code under head tag or in a seperate js file.
   // Wait for window load
@@ -267,6 +268,18 @@
   });
 </script>
 
+<script>
+VANTA.FOG({
+  el: "#one",
+  highlightColor: 0x0,
+  midtoneColor: 0x0,
+  lowlightColor: 0x0,
+  baseColor: 0x340707,
+  blurFactor: 0.28,
+  speed: 0.70,
+  zoom: 0.80
+})
+</script>
 <script>
 VANTA.WAVES({
   el: "#two",
